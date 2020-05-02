@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+    
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/apBarSetting"
+        android:background="@color/colorPrimary">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/settingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/closeSettingBtn"
+                    android:text="Close"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_alignParentLeft="true">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/updateAccountSettingsBtn"
+                    android:text="Update"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp">
+                </TextView>
+                
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/settingProfileImg"
+        android:src="@drawable/profile"
+        android:layout_below="@id/apBarSetting"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileImageChangeBtn"
+        android:text="Change Profile"
+        android:layout_below="@id/settingProfileImg"
+        android:textSize="17sp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true">
+    </TextView>
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingsPhoneNumber"
+        android:layout_below="@id/profileImageChangeBtn"
+        android:hint="Phone Number"
+        android:layout_margin="15dp"
+        android:padding="15dp">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingsFullName"
+        android:layout_below="@id/settingsPhoneNumber"
+        android:hint="Full Name"
+        android:layout_margin="15dp"
+        android:padding="15dp">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingsAddress"
+        android:layout_below="@id/settingsFullName"
+        android:hint="Address"
+        android:layout_margin="15dp"
+        android:padding="15dp">
+    </EditText>
+
+</RelativeLayout>

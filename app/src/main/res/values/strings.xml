@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Your Shop</string>
+    <string name="find_discover_choose_and_buy_anything_online">Find, Discover, Choose and Buy anything online</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forget_password">Forget Password ?</string>
+    <string name="i_am_an_admin">I am an admin!</string>
+    <string name="i_am_not_an_admin">I am not an Admin</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="add_new_product">Add New Product</string>
+    <string name="product_description_here">Product Description</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="product_description">Product Description</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_price">Product Price</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="congratulation_your_final_order_has_been_placed_successfull_soon_you_will_receive_your_order_at_your_doorstep">Congratulation, Your final order has been placed successfully. Soon it will be verified.</string>
+</resources>
