@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="Admin.AdminEditProductActivity"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardElevation="15dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/editProductImage"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp">
+        </ImageView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editProductName"
+            android:layout_below="@id/editProductImage"
+            android:hint="Product Name"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/inputs"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:inputType="text">
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editProductPrice"
+            android:layout_below="@id/editProductName"
+            android:hint="@string/product_price"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/inputs"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:inputType="number">
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editProductDescription"
+            android:layout_below="@id/editProductPrice"
+            android:hint="@string/product_description"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="@drawable/inputs"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:inputType="text">
+        </EditText>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/applyEditProductsBtn"
+            android:layout_below="@id/editProductDescription"
+            android:text="Apply Changes"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttons"
+            android:textColor="@android:color/white"
+            android:gravity="center_horizontal">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/applyDeleteProductsBtn"
+            android:layout_below="@id/applyEditProductsBtn"
+            android:text="Delete Product"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/buttons"
+            android:textColor="@android:color/white"
+            android:gravity="center_horizontal">
+        </Button>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

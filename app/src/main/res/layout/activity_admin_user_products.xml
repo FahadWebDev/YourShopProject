@@ -4,20 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Admin.AdminNewOrdersActivity">
+    tools:context="Admin.AdminUserProductsActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:id="@+id/relativeLayout3"
+        android:id="@+id/relativeLayout4"
         android:background="@color/colorPrimary"
         android:layout_alignParentTop="true">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/total_price"
-            android:text="New Orders"
+            android:text="Products"
             android:textColor="@android:color/white"
             android:textSize="25dp"
             android:layout_marginTop="10dp"
@@ -28,8 +27,8 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/orders_List"
-        android:layout_below="@id/relativeLayout3">
+        android:id="@+id/products_List"
+        android:layout_below="@id/relativeLayout4">
     </androidx.recyclerview.widget.RecyclerView>
 
 </RelativeLayout>

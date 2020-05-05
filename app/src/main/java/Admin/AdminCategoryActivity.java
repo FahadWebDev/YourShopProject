@@ -1,4 +1,4 @@
-package com.example.yourshop;
+package Admin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,13 +8,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.example.yourshop.HomeActivity;
+import com.example.yourshop.MainActivity;
+import com.example.yourshop.R;
+
 public class AdminCategoryActivity extends AppCompatActivity {
 
     private ImageView tShirts, sportsShirts, femaleDresses, sweaters;
     private ImageView glasses, hatsCaps, walletBagsPurses, shoes;
 
     private ImageView headPhonesHandFree, laptops, mobilesPhones, watches;
-    private Button adminLogoutBtn, checkNewOrdersBtn;
+    private Button adminLogoutBtn, checkNewOrdersBtn, editTheProductsBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -25,12 +29,24 @@ public class AdminCategoryActivity extends AppCompatActivity {
         adminLogoutBtn =(Button) findViewById(R.id.adminLogoutBtn);
         checkNewOrdersBtn =(Button) findViewById(R.id.checkNewOrdersBtn);
 
+        editTheProductsBtn =(Button) findViewById(R.id.editTheProductsBtn);
+
+        editTheProductsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(AdminCategoryActivity.this, HomeActivity.class);
+                intent.putExtra("Admin","Admin");
+                startActivity(intent);
+            }
+        });
+
         adminLogoutBtn.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(AdminCategoryActivity.this,MainActivity.class);
+                Intent intent = new Intent(AdminCategoryActivity.this, MainActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
                 finish();
@@ -42,7 +58,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(AdminCategoryActivity.this,AdminNewOrdersActivity.class);
+                Intent intent = new Intent(AdminCategoryActivity.this, AdminNewOrdersActivity.class);
                 startActivity(intent);
 
             }
@@ -70,7 +86,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent(AdminCategoryActivity.this,adminAddNewProductActivity.class);
+                Intent intent=new Intent(AdminCategoryActivity.this, adminAddNewProductActivity.class);
                 intent.putExtra("category","tShirts");
                 startActivity(intent);
             }

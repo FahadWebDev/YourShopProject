@@ -1,4 +1,4 @@
-package com.example.yourshop;
+package Admin;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,6 +15,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.yourshop.R;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -219,7 +220,7 @@ public class adminAddNewProductActivity extends AppCompatActivity {
                     {
                         if(task.isSuccessful())
                         {
-                            Intent intent=new Intent(adminAddNewProductActivity.this,AdminCategoryActivity.class);
+                            Intent intent=new Intent(adminAddNewProductActivity.this, AdminCategoryActivity.class);
                             startActivity(intent);
 
                             loadingBar.dismiss();

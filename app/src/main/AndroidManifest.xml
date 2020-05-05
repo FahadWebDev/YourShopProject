@@ -12,7 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AdminNewOrdersActivity"></activity>
+        <activity android:name=".UserCategoryActivity"></activity>
+        <activity android:name=".resetPasswordActivity" />
+        <activity android:name="Admin.AdminEditProductActivity" />
+        <activity android:name=".SearchProductsActivity" />
+        <activity android:name="Admin.AdminUserProductsActivity" />
+        <activity android:name="Admin.AdminNewOrdersActivity" />
         <activity android:name=".ConfirmFinalOrderActivity" />
         <activity android:name=".CartActivity" />
         <activity android:name=".ProductDetailsActivity" />
@@ -21,8 +26,8 @@
             android:name=".HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".AdminCategoryActivity" />
-        <activity android:name=".adminAddNewProductActivity" />
+        <activity android:name="Admin.AdminCategoryActivity" />
+        <activity android:name="Admin.adminAddNewProductActivity" />
         <activity android:name=".RegistersActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity">

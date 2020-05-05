@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Admin.AdminCategoryActivity">
+    tools:context=".UserCategoryActivity">
 
     <ImageView
         android:layout_width="match_parent"
@@ -15,52 +15,52 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/slogan_category"
+        android:id="@+id/slogan_User_Category"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="@string/add_new_product"
+        android:text="CATEGORIES"
         android:textSize="26sp"
         android:textStyle="bold"
         android:layout_marginTop="26dp"
         android:gravity="center_horizontal"
         android:textColor="@android:color/white">
     </TextView>
-    
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/linear_category_layout1"
+        android:id="@+id/linear_user_category_layout1"
         android:orientation="horizontal"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:layout_marginTop="55dp"
-        android:layout_below="@id/slogan_category">
-        
+        android:layout_marginTop="65dp"
+        android:layout_below="@id/slogan_User_Category">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="80dp"
-            android:id="@+id/t_shirts"
+            android:id="@+id/user_t_shirts"
             android:src="@drawable/tshirts">
         </ImageView>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/sports_tShirts"
+            android:id="@+id/user_sports_tShirts"
             android:src="@drawable/sports">
         </ImageView>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/female_dresses"
+            android:id="@+id/user_female_dresses"
             android:src="@drawable/female_dresses">
         </ImageView>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/sweaters"
+            android:id="@+id/user_sweaters"
             android:src="@drawable/sweather">
         </ImageView>
 
@@ -69,38 +69,38 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/linear_category_layout2"
+        android:id="@+id/linear_user_category_layout2"
         android:orientation="horizontal"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:layout_marginTop="55dp"
-        android:layout_below="@id/linear_category_layout1">
+        android:layout_marginTop="65dp"
+        android:layout_below="@id/linear_user_category_layout1">
 
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:id="@+id/glasses"
+            android:id="@+id/user_glasses"
             android:src="@drawable/glasses">
         </ImageView>
 
         <ImageView
             android:layout_width="90dp"
             android:layout_height="80dp"
-            android:id="@+id/walletBagesPurses"
+            android:id="@+id/user_walletBagesPurses"
             android:src="@drawable/purses_bags">
         </ImageView>
 
         <ImageView
             android:layout_width="70dp"
             android:layout_height="80dp"
-            android:id="@+id/hatsCaps"
+            android:id="@+id/user_hatsCaps"
             android:src="@drawable/hats">
         </ImageView>
 
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:id="@+id/shoes"
+            android:id="@+id/user_shoes"
             android:src="@drawable/shoess"
             android:layout_marginLeft="15dp">
         </ImageView>
@@ -110,84 +110,42 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/linear_category_layout3"
+        android:id="@+id/linear_user_category_layout3"
         android:orientation="horizontal"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:layout_marginTop="55dp"
-        android:layout_below="@id/linear_category_layout2">
+        android:layout_marginTop="65dp"
+        android:layout_below="@id/linear_user_category_layout2">
 
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:id="@+id/headPhonesHandFree"
+            android:id="@+id/user_headPhonesHandFree"
             android:src="@drawable/headphoness">
         </ImageView>
 
         <ImageView
             android:layout_width="90dp"
             android:layout_height="80dp"
-            android:id="@+id/laptops"
+            android:id="@+id/user_laptops"
             android:src="@drawable/laptops">
         </ImageView>
 
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:id="@+id/watches"
+            android:id="@+id/user_watches"
             android:src="@drawable/watches">
         </ImageView>
 
         <ImageView
             android:layout_width="70dp"
             android:layout_height="80dp"
-            android:id="@+id/mobilePhones"
+            android:id="@+id/user_mobilePhones"
             android:src="@drawable/mobiles"
             android:layout_marginLeft="15dp">
         </ImageView>
 
     </LinearLayout>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:id="@+id/editTheProductsBtn"
-        android:layout_above="@id/checkNewOrdersBtn"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@color/colorPrimary"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
-        android:layout_marginBottom="20dp"
-        android:text="Edit The Products"
-        android:textAllCaps="false">
-    </Button>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:id="@+id/checkNewOrdersBtn"
-        android:layout_above="@id/adminLogoutBtn"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@color/colorPrimary"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
-        android:text="Check New Orders"
-        android:textAllCaps="false">
-    </Button>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:id="@+id/adminLogoutBtn"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="20dp"
-        android:background="@color/colorPrimary"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
-        android:text="Logout"
-        android:textAllCaps="false">
-    </Button>
 
 </RelativeLayout>

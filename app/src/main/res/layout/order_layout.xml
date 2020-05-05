@@ -74,6 +74,20 @@
             android:gravity="center"
             android:layout_marginTop="15dp">
         </TextView>
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/showOrderProductsBtn"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/orderDateTime"
+            android:background="@android:color/white"
+            android:textSize="18sp"
+            android:text="Show This Order Products"
+            android:textColor="@color/colorPrimary">
+        </Button>
 
 
     </RelativeLayout>
